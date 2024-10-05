@@ -1,0 +1,11 @@
+﻿@page "{id:int?}/{name=test}"
+@* @page "{id:int?}/{name:alpha:minlength(3):maxlength(10)}/{id2:min(100)}" *@
+@model RazorPage_Sample.Content.IndexModel
+@{
+}
+
+<h2>This is Razor Page in Content Folder</h2>
+
+<h3>ID : @RouteData.Values["id"]</h3>
+<h3>Name : @RouteData.Values["name"]</h3>
+<h3>Name From Property : @Model.Name</h3>
